@@ -1,0 +1,35 @@
+{
+  "name": "travelogue",
+  "version": "1.0.0",
+  "description": "Travel site",
+  "scripts": {
+    "dev": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyadarshanperalam/travelogue.git"
+  },
+  "author": "priyadarshanperalam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyadarshanperalam/travelogue/issues"
+  },
+  "homepage": "https://github.com/priyadarshanperalam/travelogue#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "css-loader": "^6.3.0",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.1.1",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
