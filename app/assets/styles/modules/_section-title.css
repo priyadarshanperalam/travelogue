@@ -9,6 +9,9 @@
 	strong {
 		font-weight: 500;
 	}
+	&__blue {
+		color: $mainBlue;
+	}
 	&__icon {
 		display: block;
 		margin-left: auto;
@@ -16,6 +19,7 @@
 		margin-bottom: .6rem;
 		@mixin atSmall {
 			margin-right: .5rem;
+			top: 8px;
 			margin-left: 0;
 			margin-bottom: 0;
 			display: inline-block;

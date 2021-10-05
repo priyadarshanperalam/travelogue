@@ -9,4 +9,21 @@
 		background-color: $mainBlue;
 		color: #FFF;
 	}
+	&__testimonials {
+		background: url('/Users/priyan/onepixlab/Tutorials/sites/travelogue/app/assets/images/testimonials-bg.jpg') top center;
+		background-color: #E0E6EF;
+		background-size: cover;
+	}
+	&__no-b-padding-until-medium {
+		padding-bottom: 1rem;
+		@mixin atMedium {
+			padding-bottom: 4.5rem;
+		}
+	}
+	&__no-b-padding-until-large {
+		padding-bottom: 1rem;
+		@mixin atLarge {
+			padding-bottom: 4.5rem;
+		}
+	}
 }
