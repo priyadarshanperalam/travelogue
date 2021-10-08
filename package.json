@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.3.0"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "node": "^16.10.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.42.1"
