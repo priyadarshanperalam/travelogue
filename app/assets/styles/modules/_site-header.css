@@ -30,7 +30,12 @@
 		transform: translateX(-50%) scale(.8);
 		transform-origin: 50% 0;
 		background-color: $mainBlue;
-		padding: 25px 36px;
+		padding: 12px 24px;
+		& > img {
+			height: 90px;
+			width: 200px;
+			background-size: cover;
+		}
 
 		@mixin atMedium {
 			left: auto;
@@ -40,11 +45,10 @@
 			}
 		}
 	}
-	/*
+	
 	&__logo__graphic {
-		text-indent: -9999px;
+		color: #fff;
 	}
-	*/
 
 	&__menu-icon {
 		width: 20px;
