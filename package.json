@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
     "autoprefixer": "^10.3.6",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0",
@@ -41,11 +42,14 @@
     "webpack-dev-server": "^4.3.0"
   },
   "dependencies": {
+    "axios": "^0.23.0",
     "css-minimizer-webpack-plugin": "^3.1.1",
     "lazysizes": "^5.3.2",
     "lodash": "^4.17.21",
     "node": "^16.10.0",
     "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "sass": "^1.42.1"
   }
 }

@@ -59,7 +59,19 @@ let config = {
   entry: "./app/assets/scripts/App.js",
   plugins: pages,
   module: {
-    rules: [cssConfig],
+    rules: [
+			cssConfig,
+			{
+				test: /\.js$/,
+				exclude: /(node_modules)/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-react', '@babel/preset-env']
+					}
+				}
+			}
+		],
   },
 };
 
@@ -80,23 +92,12 @@ if (buildMode == "dev") {
 }
 
 if (buildMode == "build") {
-	config.module.rules.push({
-		test: /\.js$/,
-		exclude: /(node_modules)/,
-		use: {
-			loader: 'babel-loader',
-			options: {
-				presets: ['@babel/preset-env']
-			}
-		}
-	});
-
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   postCSSPlugins.push(require("cssnano"));
   config.output = {
     filename: "[name].[chunkhash].bundled.js",
     chunkFilename: "[name].[chunkhash].bundled.js",
-    path: path.resolve(__dirname, "docs"),
+    path: path.resolve(__dirname, "docs"), // usually people use dist instead of docs, but her we use beacuse git insist to use 'docs'
   };
   config.mode = "production";
   config.optimization = {

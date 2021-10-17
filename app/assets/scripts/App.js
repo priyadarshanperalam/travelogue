@@ -3,8 +3,16 @@ import "lazysizes";
 import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
+import ClientArea from "./modules/ClientArea";
+import MyReactComponent from "./modules/MyReactComponent"
 
-let stickyHeader = new StickyHeader();
+//React related code goes here
+import React from 'react';
+import ReactDOM from 'react-dom';
+ReactDOM.render(<MyReactComponent />, document.querySelector('#my-react-example'));
+
+new ClientArea();
+new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 90);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 80);
 new MobileMenu();
